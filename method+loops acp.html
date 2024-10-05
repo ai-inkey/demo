@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Current date</h1><p id="os"></p>
+    <script> 
+    
+        var day;
+        switch (new Date().getDay()){
+           case 0: 
+            day="sunday";
+            document.write("heelo everyone")
+            break;
+           case 1:
+            day="monday";
+            document.write("heelo everyone")
+            break;
+           case 2:
+            day="tuesday";
+            break;
+           case 3:
+            day="wednesday";
+            break;
+           case 4:
+            day="thrusday";
+            break;
+           case 5: 
+            day="friday";
+            break;
+           case 6:
+            day="saturday";
+            break; 
+           }
+           
+         document.getElementById("os").innerHTML="today is " + day;
+       
+       
+       
+       
+        
+              
+             
+              
+        
+             
+              
+               
+        </script>
+   
+   <h2>Javascript For Loops </h2>
+   <p id="demo"></p>
+   <p id="dk"></p>
+   <h3 id="df"></h3>
+  <script>
+ var num=["12", "121", "329870", "828", "23", "838", "8327"];
+ var text="";
+ var i;
+ for (i=0; i<num.length; i++){
+
+     text += num[i] + "<br>";
+ }
+ 
+document.getElementById("demo").innerHTML=text;
+document.getElementById("df").innerHTML="string length:"
+document.getElementById("dk").innerHTML=num.length;
+document.write(num.length);
+
+
+
+
+
+   
+  </script>
+
+
+</body>
+</html>
